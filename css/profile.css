@@ -552,3 +552,57 @@
   justify-content: flex-end;
   /* transform:translateY(40px); */
 }
+
+/* ============================
+    Todo App 양옆 레이아웃 배치
+=============================*/
+
+#project-todo .project-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  column-gap: 80px;
+  row-gap: 40px;
+}
+
+#project-todo .project-meta-box {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#project-todo .project-action-buttons {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  margin-top: 0;
+}
+
+#project-todo .project-visual-box {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mockup-window3 {
+  width: 310px; 
+  background: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+}
+
+.mockup-body3 {
+  width: 100%;
+  height: 620px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mockup-body3 iframe {
+  width: 125%;  
+  height: 125%; 
+  transform-origin: top left; 
+  transform: scale(0.8); 
+  border: none;
+  display: block;
+}
