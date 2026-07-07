@@ -555,7 +555,23 @@
 
 /* ============================
     Todo App 양옆 레이아웃 배치
+    (Point: #7C3AED)
 =============================*/
+
+#project-todo .project-number,
+#project-todo .project-concept span {
+  color: #B794F6;
+}
+
+#project-todo .project-skills span {
+  padding: 6px 14px;
+  background: rgba(124, 58, 237, 0.1);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  color: #B794F6;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
 
 #project-todo .project-inner {
   display: grid;
@@ -605,4 +621,50 @@
   transform: scale(0.8); 
   border: none;
   display: block;
+}
+
+/* ============================
+        Seoul Vinyl section
+        (팀 프로젝트 · Point: #EB681B)
+  =============================*/
+
+#project-vinyl .project-number,
+#project-vinyl .project-concept .concept-vinyl {
+  color: #EB681B;
+}
+
+#project-vinyl .project-skills span {
+  padding: 6px 14px;
+  background: rgba(235, 104, 27, 0.1);
+  border: 1px solid rgba(235, 104, 27, 0.3);
+  color: #EB681B;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.mockup-window-vinyl {
+  width: 100%;
+  background: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+}
+
+.mockup-body-vinyl {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mockup-body-vinyl img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 6s ease-in-out;
+}
+
+.mockup-window-vinyl:hover .mockup-body-vinyl img {
+  transform: translateY(calc(-100% + 600px));
 }
