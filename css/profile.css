@@ -671,6 +671,250 @@
 
 
 /* ============================
+         Skill Section
+         (Point: #fbd914)
+=============================*/
+
+.skill-section {
+  width: 100%;
+  padding: 140px 0;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.skill-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 40px;
+}
+
+.section-header {
+  max-width: 800px;
+  margin-bottom: 80px;
+}
+
+.section-number {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fbd914;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  word-break: keep-all;
+}
+
+.section-title span {
+  color: #fbd914;
+}
+
+.section-desc {
+  font-size: 1.1rem;
+  color: #bbb;
+  line-height: 1.8;
+  word-break: keep-all;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.category-title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 4px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.9rem;
+}
+
+.skill-name {
+  color: #ddd;
+  font-weight: 500;
+}
+
+.skill-percent {
+  color: #fbd914;
+  font-weight: 700;
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.85rem;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  width: 0;
+  height: 100%;
+  background: #fbd914;
+  border-radius: 3px;
+  transition: width 1.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+
+/* ============================
+         Contact Section
+         (Point: #fbd914)
+=============================*/
+
+.contact-section {
+  width: 100%;
+  padding: 140px 0;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 40px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 28px 32px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  background: rgba(251, 217, 20, 0.05);
+  border-color: rgba(251, 217, 20, 0.5);
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(251, 217, 20, 0.1);
+  color: #fbd914;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.35s ease;
+}
+
+.contact-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.contact-card:hover .contact-icon {
+  background: rgba(251, 217, 20, 0.2);
+}
+
+.contact-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.contact-label {
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.contact-value {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.contact-arrow {
+  flex-shrink: 0;
+  color: #666;
+  transition: transform 0.35s ease, color 0.35s ease;
+}
+
+.contact-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-card:hover .contact-arrow {
+  color: #fbd914;
+  transform: translateX(6px);
+}
+
+
+/* ============================
+         Skill / Contact 반응형
+=============================*/
+
+@media (max-width: 900px) {
+  .skill-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+
+/* ============================
       Side Dot Navigation
       (좌측 세로 도트 네비 - JS 자동 생성)
 =============================*/
@@ -685,7 +929,6 @@
   gap: 22px;
   z-index: 100;
 
-  /* 인트로 구간에서는 숨김 */
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.6s ease;
@@ -721,7 +964,6 @@
   transform: none;
 }
 
-/* hover / active 시 나타나는 툴팁 라벨 */
 .side-nav-label {
   position: absolute;
   left: 22px;
@@ -748,7 +990,6 @@
   transform: translateY(-50%) translateX(0);
 }
 
-/* 모바일: 위치 조정 & 라벨 숨김 */
 @media (max-width: 768px) {
   .side-nav {
     left: 16px;

@@ -45,7 +45,30 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // ==========================================================
-  // 3. Side Dot Navigation - 자동 생성 & 스크롤 동기화
+  // 3. Skill 섹션: 숙련도 바 애니메이션
+  // ==========================================================
+  // 새 스킬 추가 시 HTML에 skill-item + data-percent 만 넣으면 됨.
+  // ==========================================================
+  const skillItems = document.querySelectorAll('.skill-item');
+
+  if (skillItems.length) {
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const item = entry.target;
+          const fill = item.querySelector('.skill-fill');
+          const percent = item.dataset.percent || 0;
+          if (fill) fill.style.width = percent + '%';
+          skillObserver.unobserve(item);
+        }
+      });
+    }, { threshold: 0.4 });
+
+    skillItems.forEach((item) => skillObserver.observe(item));
+  }
+
+  // ==========================================================
+  // 4. Side Dot Navigation - 자동 생성 & 스크롤 동기화
   // ==========================================================
   //   data-nav-label="라벨명" data-nav-color="#컬러"
   // ==========================================================
