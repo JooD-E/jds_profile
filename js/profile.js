@@ -43,4 +43,86 @@ document.addEventListener('DOMContentLoaded', function() {
   metaBoxes.forEach(box => {
     fadeObserver.observe(box);
   });
+
+  // ==========================================================
+  // 3. Side Dot Navigation - 자동 생성 & 스크롤 동기화
+  // ==========================================================
+  //   data-nav-label="라벨명" data-nav-color="#컬러"
+  // ==========================================================
+  const nav = document.querySelector('.side-nav');
+  const sections = document.querySelectorAll('.project-intro-section');
+
+  if (nav && sections.length) {
+    sections.forEach((section) => {
+      const label = section.dataset.navLabel || section.id;
+      const color = section.dataset.navColor || '#ffffff';
+
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'side-nav-dot';
+      dot.dataset.target = section.id;
+      dot.style.setProperty('--dot-color', color);
+      dot.setAttribute('aria-label', `${label} 섹션으로 이동`);
+
+      const labelEl = document.createElement('span');
+      labelEl.className = 'side-nav-label';
+      labelEl.textContent = label;
+      dot.appendChild(labelEl);
+
+      function smoothScroll(target, duration) {
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        let startTime = null;
+
+        function animation(currentTime) {
+          if (startTime === null) startTime = currentTime;
+          const timeElapsed = currentTime - startTime;
+          const progress = Math.min(timeElapsed / duration, 1);
+
+          const ease = 1 - Math.pow(1 - progress, 3);
+
+          window.scrollTo(0, startPosition + distance * ease);
+
+          if(timeElapsed < duration ) {
+            requestAnimationFrame(animation);
+          }
+        }
+
+        requestAnimationFrame(animation);
+      }
+
+      dot.addEventListener('click', () => {
+        smoothScroll(section, 800);
+      });
+
+      nav.appendChild(dot);
+    });
+
+    const dots = nav.querySelectorAll('.side-nav-dot');
+    const activeObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          dots.forEach((d) => d.classList.remove('is-active'));
+          const activeDot = nav.querySelector(`[data-target="${entry.target.id}"]`);
+          if (activeDot) activeDot.classList.add('is-active');
+        }
+      });
+    }, {
+      rootMargin: '-40% 0px -40% 0px'
+    });
+    sections.forEach((section) => activeObserver.observe(section));
+
+    const intro = document.querySelector('.intro-box');
+    if (intro) {
+      const visibilityObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          nav.classList.toggle('is-visible', !entry.isIntersecting);
+        });
+      }, { threshold: 0 });
+      visibilityObserver.observe(intro);
+    } else {
+      nav.classList.add('is-visible');
+    }
+  }
 });
