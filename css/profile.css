@@ -132,7 +132,10 @@
   height: 250px;
   margin: 0 auto 24px;
   border-radius: 50%;
-  background-color: #333;
+  /* background-color: #333; */
+  background-image:url(../img/jds.png);
+  background-size:cover;
+  background-repeat:no-repeat;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
