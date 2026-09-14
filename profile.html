@@ -1,618 +1,960 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio_Profile</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/profile.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio_Profile</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/profile.css" />
 
+        <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="js/profile.js"></script>
+    </head>
+    <body>
+        <div class="intro-box">
+            <video src="img/background.mp4" autoplay muted playsinline></video>
 
-    <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="js/profile.js"></script>
-
-</head>
-<body>
-    <div class="intro-box">
-      <video src="img/background.mp4" autoplay muted playsinline></video>
-      
-      <div class="intro-greeting-box">
-        <h2 class="intro-main-txt">Thank you for your time.</h2>
-        <p class="intro-sub-txt">
-          귀한 시간 내어 방문해 주셔서 감사합니다.<br>
-          탄탄한 마크업과 트렌디한 인터랙션을 지향하는 웹 퍼블리셔 조대성의 포트폴리오입니다.
-        </p>
-        <div class="intro-signature">
-          Web Publisher. <strong>조 대 성</strong>
+            <div class="intro-greeting-box">
+                <h2 class="intro-main-txt">Thank you for your time.</h2>
+                <p class="intro-sub-txt">
+                    귀한 시간 내어 방문해 주셔서 감사합니다.<br />
+                    탄탄한 마크업과 트렌디한 인터랙션을 지향하는 웹 퍼블리셔
+                    조대성의 포트폴리오입니다.
+                </p>
+                <div class="intro-signature">
+                    Web Publisher. <strong>조 대 성</strong>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-
-    <!-- ===================================
+        <!-- ===================================
                   어바웃 섹션
     ======================================-->
-    
-    <section class="about-section">
-      <div class="about-container">
-        
-        <div class="profile-box">
-          <div class="img-wrap">
+
+        <section class="about-section">
+            <div class="about-container">
+                <div class="profile-box">
+                    <div class="img-wrap"></div>
+                    <h2 class="name">조대성</h2>
+                    <p class="job-title">Web Publisher</p>
+                </div>
+
+                <div class="info-box">
+                    <h3 class="project-concept">
+                        <span id="typing-concept" class="info-box-span"></span>
+                    </h3>
+                    <p class="description">
+                        단순히 화면을 예쁘게 그리는 것을 넘어, 사용자가 헤매지
+                        않고 자연스럽게 흐름을 따라오는 퍼블리싱을 지향합니다.
+                        제 설계가 온전히 전달될 때까지 고민하고 정진하겠습니다.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3 & SCSS</span>
+                        <span>JavaScript</span>
+                        <span>jQuery</span>
+                        <span>Php</span>
+                        <span>MySQL</span>
+                        <span>React</span>
+                        <span>Figma</span>
+                        <span>Ai</span>
+                        <span>Ps</span>
+                    </div>
+                </div>
             </div>
-          <h2 class="name">조대성</h2>
-          <p class="job-title">Web Publisher</p>
-        </div>
+        </section>
 
-        <div class="info-box">
-          <h3 class="project-concept">
-              <span id="typing-concept" class="info-box-span"></span>
-          </h3>
-          <p class="description">
-            단순히 화면을 예쁘게 그리는 것을 넘어, 사용자가 헤매지 않고 자연스럽게 흐름을 따라오는 퍼블리싱을 지향합니다. 제 설계가 온전히 전달될 때까지 고민하고 정진하겠습니다.
-          </p>
-          
-          <div class="skill-tags">
-            <span>HTML5</span>
-            <span>CSS3 & SCSS</span>
-            <span>JavaScript</span>
-            <span>jQuery</span>
-            <span>Php</span>
-            <span>MySQL</span>
-            <span>React</span>
-            <span>Figma</span>
-            <span>Ai</span>
-            <span>Ps</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ===================================
+        <!-- ===================================
                 Skill 섹션
     ======================================-->
 
-    <section class="skill-section">
-      <div class="skill-container">
-        <div class="section-header">
-          <span class="section-number">SKILLS</span>
-          <h2 class="section-title">주력으로 다루는 <span>기술 스택</span></h2>
-          <p class="section-desc">프로젝트 진행 시 자주 사용하는 기술의 숙련도입니다.</p>
-        </div>
+        <section class="skill-section">
+            <div class="skill-container">
+                <div class="section-header">
+                    <span class="section-number">SKILLS</span>
+                    <h2 class="section-title">
+                        주력으로 다루는 <span>기술 스택</span>
+                    </h2>
+                    <p class="section-desc">
+                        프로젝트 진행 시 자주 사용하는 기술의 숙련도입니다.
+                    </p>
+                </div>
 
-        <div class="skill-grid">
+                <div class="skill-grid">
+                    <div class="skill-category">
+                        <h3 class="category-title">Frontend</h3>
+                        <div class="skill-item" data-percent="95">
+                            <div class="skill-label">
+                                <span class="skill-name">HTML5 / CSS3</span
+                                ><span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="75">
+                            <div class="skill-label">
+                                <span class="skill-name">JavaScript (ES6+)</span
+                                ><span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="75">
+                            <div class="skill-label">
+                                <span class="skill-name">jQuery</span
+                                ><span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="60">
+                            <div class="skill-label">
+                                <span class="skill-name">React</span
+                                ><span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                    </div>
 
-          <div class="skill-category">
-            <h3 class="category-title">Frontend</h3>
-            <div class="skill-item" data-percent="95">
-              <div class="skill-label"><span class="skill-name">HTML5 / CSS3</span><span class="skill-percent">90%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill-item" data-percent="75">
-              <div class="skill-label"><span class="skill-name">JavaScript (ES6+)</span><span class="skill-percent">75%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill-item" data-percent="75">
-              <div class="skill-label"><span class="skill-name">jQuery</span><span class="skill-percent">75%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill-item" data-percent="60">
-              <div class="skill-label"><span class="skill-name">React</span><span class="skill-percent">60%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-          </div>
+                    <div class="skill-category">
+                        <h3 class="category-title">Backend &amp; DB</h3>
+                        <div class="skill-item" data-percent="70">
+                            <div class="skill-label">
+                                <span class="skill-name">PHP</span
+                                ><span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="70">
+                            <div class="skill-label">
+                                <span class="skill-name">MySQL</span
+                                ><span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="60">
+                            <div class="skill-label">
+                                <span class="skill-name">Firebase</span
+                                ><span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                    </div>
 
-          <div class="skill-category">
-            <h3 class="category-title">Backend &amp; DB</h3>
-            <div class="skill-item" data-percent="60">
-              <div class="skill-label"><span class="skill-name">PHP</span><span class="skill-percent">60%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
+                    <div class="skill-category">
+                        <h3 class="category-title">Tools &amp; Design</h3>
+                        <div class="skill-item" data-percent="85">
+                            <div class="skill-label">
+                                <span class="skill-name">Figma</span
+                                ><span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="75">
+                            <div class="skill-label">
+                                <span class="skill-name">Photoshop</span
+                                ><span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="80">
+                            <div class="skill-label">
+                                <span class="skill-name">GitHub</span
+                                ><span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-percent="90">
+                            <div class="skill-label">
+                                <span class="skill-name">VS Code</span
+                                ><span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="skill-item" data-percent="60">
-              <div class="skill-label"><span class="skill-name">MySQL</span><span class="skill-percent">60%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill-item" data-percent="60">
-              <div class="skill-label"><span class="skill-name">Firebase</span><span class="skill-percent">60%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-          </div>
+        </section>
 
-          <div class="skill-category">
-            <h3 class="category-title">Tools &amp; Design</h3>
-            <div class="skill-item" data-percent="80">
-              <div class="skill-label"><span class="skill-name">Figma</span><span class="skill-percent">80%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill-item" data-percent="80">
-              <div class="skill-label"><span class="skill-name">GitHub</span><span class="skill-percent">80%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-            <div class="skill-item" data-percent="70">
-              <div class="skill-label"><span class="skill-name">VS Code</span><span class="skill-percent">70%</span></div>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ===================================
+        <!-- ===================================
                 제이에스티나 섹션
     ======================================-->
 
-    <section id="project-jestina" class="project-intro-section" data-nav-label="J.ESTINA" data-nav-color="#c5a880">
-      <div class="project-inner">
-        
-        <div class="project-meta-box">
-          <span class="project-number">PROJECT 01</span>
-          
-          <h3 class="project-concept">
-            우아함과 주얼리 브랜드 고유의 아이덴티티를 살린<br>
-            <span class="concept-jestina">J.ESTINA</span> 리뉴얼 퍼블리싱
-          </h3>
-          
-          <p class="project-description">
-            기존 웹사이트의 단조롭고 반복적인 슬라이드 구조에서 벗어나, 브랜드 고유의 고급스러운 무드가 돋보이도록 레이아웃의 틀을 과감하게 깼습니다. 여백의 미를 살린 비주얼 중심의 UI를 설계하여 제품에 집중도를 높였으며, 웹 표준을 준수하는 탄탄한 시맨틱 마크업과 순수 CSS를 활용해 흔들림 없는 반응형 웹을 구현했습니다.
-          </p>
-          
-          <div class="project-skills">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-            <span>jQuery</span>
-            <span>Php</span>
-            <span>MySQL</span>
-            <span>Figma</span>
-            <span>#반응형</span>
-          </div>
-        </div>
+        <section
+            id="project-jestina"
+            class="project-intro-section"
+            data-nav-label="J.ESTINA"
+            data-nav-color="#c5a880"
+        >
+            <div class="project-inner">
+                <div class="project-meta-box">
+                    <span class="project-number">PROJECT 01</span>
 
-        <div class="project-visual-box">
-          <div class="mockup-window">
-            <div class="mockup-header">
-              <span></span><span></span><span></span>
+                    <h3 class="project-concept">
+                        우아함과 주얼리 브랜드 고유의 아이덴티티를 살린<br />
+                        <span class="concept-jestina">J.ESTINA</span> 리뉴얼
+                        퍼블리싱
+                    </h3>
+
+                    <p class="project-description">
+                        기존 웹사이트의 단조롭고 반복적인 슬라이드 구조에서
+                        벗어나, 브랜드 고유의 고급스러운 무드가 돋보이도록
+                        레이아웃의 틀을 과감하게 깼습니다. 여백의 미를 살린
+                        비주얼 중심의 UI를 설계하여 제품에 집중도를 높였으며, 웹
+                        표준을 준수하는 탄탄한 시맨틱 마크업과 순수 CSS를 활용해
+                        흔들림 없는 반응형 웹을 구현했습니다.
+                    </p>
+
+                    <div class="project-skills">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>jQuery</span>
+                        <span>Php</span>
+                        <span>MySQL</span>
+                        <span>Figma</span>
+                        <span>#반응형</span>
+                    </div>
+                </div>
+
+                <div class="project-visual-box">
+                    <div class="jestina-tabs">
+                        <button class="j-tab-btn is-active" data-view="main">
+                            MAIN
+                        </button>
+                        <button class="j-tab-btn" data-view="detail">
+                            VIEW
+                        </button>
+                    </div>
+
+                    <div class="mockup-window">
+                        <div class="mockup-header">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="mockup-body">
+                            <img
+                                src="img/jestina.png"
+                                alt="제이에스티나 포트폴리오 메인 화면"
+                                class="mockup-img is-active"
+                                id="j-view-main"
+                            />
+                            <iframe
+                                src="https://jood95.dothome.co.kr/rwd_jds/view_page.html"
+                                class="mockup-img"
+                                id="j-view-detail"
+                                title="제이에스티나 상세 화면"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-action-buttons">
+                    <a
+                        href="https://jood95.dothome.co.kr/rwd_jds/rwd_jds.html"
+                        class="action-btn btn-live"
+                        target="_blank"
+                    >
+                        <span class="pulse-dot"></span>
+                        Main Site
+                    </a>
+
+                    <a
+                        href="https://jood95.dothome.co.kr/rwd_jds/view_page.html"
+                        class="action-btn btn-view"
+                        target="_blank"
+                        ><svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                        View Page</a
+                    >
+
+                    <a
+                        href="https://github.com/JooD-E/rwd_Jestina.git"
+                        class="action-btn btn-github"
+                        target="_blank"
+                    >
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                            />
+                        </svg>
+                        GitHub
+                    </a>
+
+                    <a
+                        href="https://www.figma.com/design/KW5cdLuncQQMW1Ks298oHk/%EC%A0%9C%EC%9D%B4%EC%97%90%EC%8A%A4%ED%8B%B0%EB%82%98-%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?node-id=0-1&t=Rt74ojIC3rcA0gu7-0"
+                        class="action-btn btn-figma"
+                        target="_blank"
+                    >
+                        <img
+                            src="img/figma.png"
+                            alt="Figma 로고"
+                            class="btn-icon"
+                        />
+                        Figma
+                    </a>
+                </div>
             </div>
-            <div class="mockup-body">
-              <img src="img/jestina.png" alt="제이에스티나 포트폴리오 메인 화면">
-            </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="project-action-buttons">
-  
-          <a href="https://jood95.dothome.co.kr/rwd_jds/rwd_jds.html" class="action-btn btn-live" target="_blank">
-            <span class="pulse-dot"></span>
-            Live Site
-          </a>
-
-          <a href="https://github.com/JooD-E/rwd_Jestina.git" class="action-btn btn-github" target="_blank">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
-            GitHub
-          </a>
-
-          <a href="https://www.figma.com/design/KW5cdLuncQQMW1Ks298oHk/%EC%A0%9C%EC%9D%B4%EC%97%90%EC%8A%A4%ED%8B%B0%EB%82%98-%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?node-id=0-1&t=Rt74ojIC3rcA0gu7-0" class="action-btn btn-figma" target="_blank">
-            <img src="img/figma.png" alt="Figma 로고" class="btn-icon">
-            Figma
-          </a>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===================================
+        <!-- ===================================
                     이케아 섹션
     ======================================-->
 
-    <section id="project-ikea" class="project-intro-section alt-bg" data-nav-label="IKEA" data-nav-color="#e9cf3c">
-      <div class="project-inner">
-        
-        <div class="project-meta-box">
-          <span class="project-number">PROJECT 02</span>
+        <section
+            id="project-ikea"
+            class="project-intro-section alt-bg"
+            data-nav-label="IKEA"
+            data-nav-color="#e9cf3c"
+        >
+            <div class="project-inner">
+                <div class="project-meta-box">
+                    <span class="project-number">PROJECT 02</span>
 
-          <h3 class="project-concept">
-            방대한 카테고리를 직관적으로 정리하고,<br>
-            컴포넌트 조립으로 <span>유지보수가 편한 뷰</span>를 설계했습니다.
-          </h3>
-          
-          <p class="project-description">
-            이케아 특유의 수많은 상품과 카테고리 정보가 사용자에게 피로감을 주지 않도록 UI 레이아웃을 쾌적하게 재설계했습니다. React를 도입해 헤더, 배너, 상품 리스트 등 화면의 각 영역을 독립적인 컴포넌트로 깔끔하게 분리하여 코드의 가독성을 높였으며, 부드러운 탭 메뉴와 슬라이드 모션을 더해 편안한 탐색 경험을 구현했습니다.
-          </p>
+                    <h3 class="project-concept">
+                        방대한 카테고리를 직관적으로 정리하고,<br />
+                        컴포넌트 조립으로 <span>유지보수가 편한 뷰</span>를
+                        설계했습니다.
+                    </h3>
 
-          <div class="project-skills">
-            <span>React</span>
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-            <span>jQuery</span>
-            <span>#PC 전용</span>
-          </div>
-        </div>
+                    <p class="project-description">
+                        이케아 특유의 수많은 상품과 카테고리 정보가 사용자에게
+                        피로감을 주지 않도록 UI 레이아웃을 쾌적하게
+                        재설계했습니다. React를 도입해 헤더, 배너, 상품 리스트
+                        등 화면의 각 영역을 독립적인 컴포넌트로 깔끔하게
+                        분리하여 코드의 가독성을 높였으며, 부드러운 탭 메뉴와
+                        슬라이드 모션을 더해 편안한 탐색 경험을 구현했습니다.
+                    </p>
 
-        <div class="project-visual-box">
-          <div class="mockup-window2">
-            <div class="mockup-header">
-              <span></span><span></span><span></span>
+                    <div class="project-skills">
+                        <span>React</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>jQuery</span>
+                        <span>#PC 전용</span>
+                    </div>
+                </div>
+
+                <div class="project-visual-box">
+                    <div class="mockup-window2">
+                        <div class="mockup-header">
+                            <span></span><span></span><span></span>
+                        </div>
+
+                        <div class="mockup-body2">
+                            <img
+                                src="img/ikea.png"
+                                alt="이케아 포트폴리오 메인 화면"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-action-buttons">
+                    <a
+                        href="https://jood95.dothome.co.kr/ikea_react/ikea_react_main.html"
+                        class="action-btn btn-live"
+                        target="_blank"
+                    >
+                        <span class="pulse-dot"></span>
+                        Live Site
+                    </a>
+
+                    <a
+                        href="https://github.com/JooD-E/IKEA_react.git"
+                        class="action-btn btn-github"
+                        target="_blank"
+                    >
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                            />
+                        </svg>
+                        GitHub
+                    </a>
+
+                    <a
+                        href="https://www.figma.com/design/QJ5Zt3pB1Jug3TeRwM6HmK/react_Ikea?node-id=0-1&p=f&t=YlaXq0p5la35ohnE-0"
+                        class="action-btn btn-figma"
+                        target="_blank"
+                    >
+                        <img
+                            src="img/figma.png"
+                            alt="Figma 로고"
+                            class="btn-icon"
+                        />
+                        Figma
+                    </a>
+                </div>
             </div>
+        </section>
 
-            <div class="mockup-body2">
-              <img src="img/ikea.png" alt="이케아 포트폴리오 메인 화면">
+        <section
+            id="project-movie"
+            class="project-intro-section"
+            data-nav-label="MOVIELOG"
+            data-nav-color="#D32F2F"
+        >
+            <div class="project-inner">
+                <div class="project-meta-box">
+                    <span class="project-number">PROJECT 03</span>
+
+                    <h3 class="project-concept">
+                        사용자의 직관적인 흐름을 고려하여,<br />
+                        <span>탐색이 즐거운</span> 모바일 전용 뷰를
+                        설계했습니다.
+                    </h3>
+
+                    <p class="project-description">
+                        한정된 모바일 화면 안에서 방대한 영화 데이터가 답답해
+                        보이지 않도록 UI 레이아웃을 쾌적하게 재설계했습니다.
+                        스와이프 및 스크롤에 최적화된 컴포넌트를 배치하여
+                        가독성을 높였으며, 부드러운 화면 전환과 직관적인
+                        네비게이션을 더해 모바일 환경에 걸맞은 편안한 탐색
+                        경험을 구현했습니다.
+                    </p>
+
+                    <div class="project-skills">
+                        <span>React</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Vercel</span>
+                        <span>#모바일 전용</span>
+                        <span>#API</span>
+                    </div>
+                </div>
+
+                <div class="project-visual-box">
+                    <div class="mobile-mockup-window">
+                        <div class="mobile-mockup-body">
+                            <img
+                                src="img/movielog.png"
+                                alt="무비앱 포트폴리오 메인 화면"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-action-buttons">
+                    <a
+                        href="#"
+                        class="action-btn btn-live"
+                        onclick="
+                            winOpen4();
+                            return false;
+                        "
+                    >
+                        <span class="pulse-dot"></span>
+                        Live Site
+                    </a>
+
+                    <a
+                        href="https://github.com/JooD-E/movieapp.git"
+                        class="action-btn btn-github"
+                        target="_blank"
+                    >
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                            />
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
             </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="project-action-buttons">
-            <a href="https://jood95.dothome.co.kr/ikea_react/ikea_react_main.html" class="action-btn btn-live" target="_blank">
-              <span class="pulse-dot"></span>
-              Live Site
-            </a>
+        <section
+            id="project-todo"
+            class="project-intro-section alt-bg"
+            data-nav-label="TODO APP"
+            data-nav-color="#B794F6"
+        >
+            <div class="project-inner">
+                <div class="project-meta-box">
+                    <span class="project-number">PROJECT 04</span>
 
-            <a href="https://github.com/JooD-E/IKEA_react.git" class="action-btn btn-github" target="_blank">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              GitHub
-            </a>
+                    <h3 class="project-concept">
+                        일상을 체계적으로 관리하는,<br />
+                        직관적이고 깔끔한 <span>Todo List</span>
+                    </h3>
 
-            <a href="https://www.figma.com/design/QJ5Zt3pB1Jug3TeRwM6HmK/react_Ikea?node-id=0-1&p=f&t=YlaXq0p5la35ohnE-0" class="action-btn btn-figma" target="_blank">
-              <img src="img/figma.png" alt="Figma 로고" class="btn-icon">
-              Figma
-            </a>
-          </div>
+                    <p class="project-description">
+                        React의 상태 관리를 적극 활용하여 할 일의 추가, 삭제
+                        완료 처리를 매끄럽게 구현한 웹 어플리케이션입니다.
+                        Firebase를 연동하여 실시간으로 데이터를 안전하게
+                        관리하고 배포까지 성공적으로 마무리했습니다. 불필요한
+                        요소는 덜어내고 사용자 편의성에 집중한 UI/UX를
+                        설계했습니다.
+                    </p>
 
-      </div>
-    </section>
+                    <div class="project-skills">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>CSS3</span>
+                        <span>Firebase</span>
+                        <span>#모바일 전용</span>
+                        <span>#웹앱</span>
+                    </div>
+                </div>
 
-    <section id="project-movie" class="project-intro-section" data-nav-label="MOVIELOG" data-nav-color="#D32F2F">
-      <div class="project-inner">
-        
-        <div class="project-meta-box">
-          <span class="project-number">PROJECT 03</span>
+                <div class="project-visual-box">
+                    <div class="mockup-window3">
+                        <div class="mockup-header">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="mockup-body3">
+                            <iframe
+                                src="https://reactapp-91283.web.app/"
+                                title="Todo App Live Preview"
+                            >
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
 
-          <h3 class="project-concept">
-            사용자의 직관적인 흐름을 고려하여,<br>
-            <span>탐색이 즐거운</span> 모바일 전용 뷰를 설계했습니다.
-          </h3>
-          
-          <p class="project-description">
-            한정된 모바일 화면 안에서 방대한 영화 데이터가 답답해 보이지 않도록 UI 레이아웃을 쾌적하게 재설계했습니다. 스와이프 및 스크롤에 최적화된 컴포넌트를 배치하여 가독성을 높였으며, 부드러운 화면 전환과 직관적인 네비게이션을 더해 모바일 환경에 걸맞은 편안한 탐색 경험을 구현했습니다.
-          </p>
+                <div class="project-action-buttons">
+                    <a
+                        href="https://reactapp-91283.web.app/"
+                        class="action-btn btn-live"
+                        target="_blank"
+                    >
+                        <span class="pulse-dot"></span>
+                        Live Site
+                    </a>
 
-          <div class="project-skills">
-            <span>React</span>
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-            <span>Vercel</span>
-            <span>#모바일 전용</span>
-            <span>#API</span>
-          </div>
-        </div>
+                    <a
+                        href="https://github.com/JooD-E/todo-app.git"
+                        class="action-btn btn-github"
+                        target="_blank"
+                    >
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                            />
+                        </svg>
+                        GitHub
+                    </a>
 
-        <div class="project-visual-box">
-          <div class="mobile-mockup-window">
-            <div class="mobile-mockup-body">
-              <img src="img/movielog.png" alt="무비앱 포트폴리오 메인 화면">
+                    <a
+                        href="https://www.figma.com/design/ngjadoKoUwYQxJ6x7WZoCy/TodoList?node-id=0-1&p=f&t=Hry6IhmY56jD4WJP-0"
+                        class="action-btn btn-figma"
+                        target="_blank"
+                    >
+                        <img
+                            src="img/figma.png"
+                            alt="Figma 로고"
+                            class="btn-icon"
+                        />
+                        Figma
+                    </a>
+                </div>
             </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="project-action-buttons">
-          <a href="#" class="action-btn btn-live" onclick="winOpen4(); return false;">
-            <span class="pulse-dot"></span>
-            Live Site
-          </a>
-
-          <a href="https://github.com/JooD-E/movieapp.git" class="action-btn btn-github" target="_blank">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
-            GitHub
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="project-todo" class="project-intro-section alt-bg" data-nav-label="TODO APP" data-nav-color="#B794F6">
-      <div class="project-inner">
-        <div class="project-meta-box">
-          <span class="project-number">PROJECT 04</span>
-
-          <h3 class="project-concept">
-            일상을 체계적으로 관리하는,<br>
-            직관적이고 깔끔한 <span>Todo List</span>
-          </h3>
-
-          <p class="project-description">
-            React의 상태 관리를 적극 활용하여 할 일의 추가, 삭제 완료 처리를 매끄럽게 구현한 웹 어플리케이션입니다.  Firebase를 연동하여 실시간으로 데이터를 안전하게 관리하고 배포까지 성공적으로 마무리했습니다. 불필요한 요소는 덜어내고 사용자 편의성에 집중한 UI/UX를 설계했습니다.
-          </p>
-
-          <div class="project-skills">
-            <span>React</span>
-            <span>JavaScript</span>
-            <span>CSS3</span>
-            <span>Firebase</span>
-            <span>#모바일 전용</span>
-            <span>#웹앱</span>
-          </div>
-        </div>
-
-        <div class="project-visual-box">
-          <div class="mockup-window3">
-            <div class="mockup-header">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="mockup-body3">
-              <iframe 
-                src="https://reactapp-91283.web.app/" 
-                title="Todo App Live Preview">
-              </iframe>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-action-buttons">
-          <a href="https://reactapp-91283.web.app/" class="action-btn btn-live" target="_blank">
-            <span class="pulse-dot"></span>
-            Live Site
-          </a>
-
-          <a href="https://github.com/JooD-E/todo-app.git" class="action-btn btn-github" target="_blank">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
-            GitHub
-          </a>
-
-          <a href="https://www.figma.com/design/ngjadoKoUwYQxJ6x7WZoCy/TodoList?node-id=0-1&p=f&t=Hry6IhmY56jD4WJP-0" class="action-btn btn-figma" target="_blank">
-            <img src="img/figma.png" alt="Figma 로고" class="btn-icon">
-            Figma
-          </a>
-        </div>
-      </div>      
-    </section>
-
-    <!-- ===================================
+        <!-- ===================================
                 Seoul Vinyl 섹션 (팀 프로젝트)
     ======================================-->
 
-    <section id="project-vinyl" class="project-intro-section" data-nav-label="SEOUL VINYL" data-nav-color="#EB681B">
-      <div class="project-inner">
-        
-        <div class="project-meta-box">
-          <span class="project-number">PROJECT 05 · TEAM</span>
-          
-          <h3 class="project-concept">
-            아날로그의 감성과 브랜드 아이덴티티를 담은<br>
-            <span class="concept-vinyl">SEOUL VINYL</span> 팀 프로젝트
-          </h3>
-          
-          <p class="project-description">
-            바이닐 레코드에 대한 애정을 담은 브랜드 이커머스 사이트를 팀 협업으로 완성한 프로젝트입니다. GitHub의 feature 브랜치 전략을 도입해 SHOP, DISCOVER, ABOUT US 등 각 페이지를 병렬로 작업하며 실제 협업 워크플로우를 경험했습니다. 다크 무드 UI로 브랜드 정체성을 강조하고, Swiper와 AOS 라이브러리를 활용해 스크롤에 반응하는 몰입감 있는 인터랙션을 구현했습니다.
-          </p>
-          
-          <div class="project-skills">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-            <span>jQuery</span>
-            <span>Php</span>
-            <span>MySQL</span>
-            <span>Swiper</span>
-            <span>AOS</span>
-            <span>#팀 프로젝트</span>
-            <span>#Git 협업</span>
-          </div>
-        </div>
+        <section
+            id="project-vinyl"
+            class="project-intro-section"
+            data-nav-label="SEOUL VINYL"
+            data-nav-color="#EB681B"
+        >
+            <div class="project-inner">
+                <div class="project-meta-box">
+                    <span class="project-number">PROJECT 05 · TEAM</span>
 
-        <div class="project-visual-box">
-          <div class="mockup-window-vinyl">
-            <div class="mockup-header">
-              <span></span><span></span><span></span>
+                    <h3 class="project-concept">
+                        아날로그의 감성과 브랜드 아이덴티티를 담은<br />
+                        <span class="concept-vinyl">SEOUL VINYL</span> 팀
+                        프로젝트
+                    </h3>
+
+                    <p class="project-description">
+                        바이닐 레코드에 대한 애정을 담은 브랜드 이커머스
+                        사이트를 팀 협업으로 완성한 프로젝트입니다. GitHub의
+                        feature 브랜치 전략을 도입해 SHOP, DISCOVER, ABOUT US 등
+                        각 페이지를 병렬로 작업하며 실제 협업 워크플로우를
+                        경험했습니다. 다크 무드 UI로 브랜드 정체성을 강조하고,
+                        Swiper와 AOS 라이브러리를 활용해 스크롤에 반응하는
+                        몰입감 있는 인터랙션을 구현했습니다.
+                    </p>
+
+                    <div class="project-skills">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>jQuery</span>
+                        <span>Php</span>
+                        <span>MySQL</span>
+                        <span>Swiper</span>
+                        <span>AOS</span>
+                        <span>#팀 프로젝트</span>
+                        <span>#Git 협업</span>
+                    </div>
+                </div>
+
+                <div class="project-visual-box">
+                    <div class="mockup-window-vinyl">
+                        <div class="mockup-header">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="mockup-body-vinyl">
+                            <img
+                                src="img/seoul_vinyl.jpg"
+                                alt="Seoul Vinyl 팀 프로젝트 메인 화면"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-action-buttons">
+                    <a
+                        href="https://chodasung.dothome.co.kr/teamproject/main.html"
+                        class="action-btn btn-live"
+                        target="_blank"
+                    >
+                        <span class="pulse-dot"></span>
+                        Live Site
+                    </a>
+
+                    <a
+                        href="https://github.com/JooD-E/teamproject.git"
+                        class="action-btn btn-github"
+                        target="_blank"
+                    >
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                            />
+                        </svg>
+                        GitHub
+                    </a>
+
+                    <a
+                        href="https://www.figma.com/design/AxoWCPnaGbFLGrIJalgixZ/%EC%84%9C%EC%9A%B8-%EB%B0%94%EC%9D%B4%EB%8B%90?node-id=214-634&p=f&t=xtjVBFQYIYGgMYuM-0"
+                        class="action-btn btn-figma"
+                        target="_blank"
+                    >
+                        <img
+                            src="img/figma.png"
+                            alt="Figma 로고"
+                            class="btn-icon"
+                        />
+                        Figma
+                    </a>
+
+                    <a
+                        href="https://www.figma.com/design/IuLaEpi84pW23psyYtydUj/SEOUL-VINYL-PPT?node-id=0-1&p=f&t=jPkbWfZYzDtYw4z9-0"
+                        class="action-btn btn-figma"
+                        target="_blank"
+                    >
+                        <img
+                            src="img/figma.png"
+                            alt="Figma 로고"
+                            class="btn-icon"
+                        />
+                        Figma 기획서
+                    </a>
+                </div>
             </div>
-            <div class="mockup-body-vinyl">
-              <img src="img/seoul_vinyl.jpg" alt="Seoul Vinyl 팀 프로젝트 메인 화면">
-            </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="project-action-buttons">
-            <a href="https://chodasung.dothome.co.kr/teamproject/main.html" class="action-btn btn-live" target="_blank">
-              <span class="pulse-dot"></span>
-              Live Site
-            </a>
-
-            <a href="https://github.com/JooD-E/teamproject.git" class="action-btn btn-github" target="_blank">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              GitHub
-            </a>
-
-            <a href="https://www.figma.com/design/AxoWCPnaGbFLGrIJalgixZ/%EC%84%9C%EC%9A%B8-%EB%B0%94%EC%9D%B4%EB%8B%90?node-id=214-634&p=f&t=xtjVBFQYIYGgMYuM-0" class="action-btn btn-figma" target="_blank">
-              <img src="img/figma.png" alt="Figma 로고" class="btn-icon">
-              Figma
-            </a>
-
-            <a href="https://www.figma.com/design/IuLaEpi84pW23psyYtydUj/SEOUL-VINYL-PPT?node-id=0-1&p=f&t=jPkbWfZYzDtYw4z9-0" class="action-btn btn-figma" target="_blank">
-              <img src="img/figma.png" alt="Figma 로고" class="btn-icon">
-              Figma 기획서
-            </a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===================================
+        <!-- ===================================
                 Re:HAB FIT 프로젝트
     ======================================-->
 
-    <section id="project-rehab" class="project-intro-section" data-nav-label="ReHAB FIT" data-nav-color="#30D158">
-      <div class="project-inner">
-        
-        <div class="project-meta-box">
-          <span class="project-number">PROJECT 06</span>
-          
-          <h3 class="project-concept">
-            직관적인 UI와 동적 인터랙션을 담은<br>
-            <span class="concept-rehab">Re:HAB FIT</span> 반응형 웹 프로젝트
-          </h3>
-          
-          <p class="project-description">
-            사용자 맞춤형 재활 정보를 제공하는 직관적인 반응형 웹 사이트입니다. 메인 화면에 인체 실루엣과 펄스 마커 UI를 도입하여 사용성을 높였고, 가로 스와이프 방식의 루틴 추천 섹션과 숏폼 영상 감성을 살린 모달 팝업을 통해 몰입감 있는 인터랙션을 구현했습니다. PC와 모바일 환경을 완벽하게 지원하는 탄탄한 레이아웃 설계로 사용자 편의성을 극대화했습니다.
-          </p>
-          
-          <div class="project-skills">
-            <span>HTML5</span>
-            <span>SCSS</span>
-            <span>JavaScript</span>
-            <span>jQuery</span>
-            <span>#Git pages 배포</span>
-            <span>#반응형</span>
-          </div>
-        </div>
+        <section
+            id="project-rehab"
+            class="project-intro-section"
+            data-nav-label="ReHAB FIT"
+            data-nav-color="#30D158"
+        >
+            <div class="project-inner">
+                <div class="project-meta-box">
+                    <span class="project-number">PROJECT 06</span>
 
-        <div class="project-visual-box">
-          <div class="mockup-window-rehab">
-            <div class="mockup-header">
-              <span></span><span></span><span></span>
+                    <h3 class="project-concept">
+                        직관적인 UI와 동적 인터랙션을 담은<br />
+                        <span class="concept-rehab">Re:HAB FIT</span> 반응형 웹
+                        프로젝트
+                    </h3>
+
+                    <p class="project-description">
+                        사용자 맞춤형 재활 정보를 제공하는 직관적인 반응형 웹
+                        사이트입니다. 메인 화면에 인체 실루엣과 펄스 마커 UI를
+                        도입하여 사용성을 높였고, 가로 스와이프 방식의 루틴 추천
+                        섹션과 숏폼 영상 감성을 살린 모달 팝업을 통해 몰입감
+                        있는 인터랙션을 구현했습니다. PC와 모바일 환경을
+                        완벽하게 지원하는 탄탄한 레이아웃 설계로 사용자 편의성을
+                        극대화했습니다.
+                    </p>
+
+                    <div class="project-skills">
+                        <span>HTML5</span>
+                        <span>SCSS</span>
+                        <span>JavaScript</span>
+                        <span>jQuery</span>
+                        <span>#Git pages 배포</span>
+                        <span>#반응형</span>
+                    </div>
+                </div>
+
+                <div class="project-visual-box">
+                    <div class="mockup-window-rehab">
+                        <div class="mockup-header">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="mockup-body-rehab">
+                            <img
+                                src="img/rehabfit.png"
+                                alt="ReHab fit 프로젝트 메인 화면"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-action-buttons">
+                    <a
+                        href="https://jood-e.github.io/rehabfit/rehabfit.html"
+                        class="action-btn btn-live"
+                        target="_blank"
+                    >
+                        <span class="pulse-dot"></span>
+                        Live Site
+                    </a>
+
+                    <a
+                        href="https://github.com/JooD-E/rehabfit.git"
+                        class="action-btn btn-github"
+                        target="_blank"
+                    >
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                            />
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
             </div>
-            <div class="mockup-body-rehab">
-              <img src="img/rehabfit.png" alt="ReHab fit 프로젝트 메인 화면">
-            </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="project-action-buttons">
-            <a href="https://jood-e.github.io/rehabfit/rehabfit.html" class="action-btn btn-live" target="_blank">
-              <span class="pulse-dot"></span>
-              Live Site
-            </a>
-
-            <a href="https://github.com/JooD-E/rehabfit.git" class="action-btn btn-github" target="_blank">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              GitHub
-            </a>
-            
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ===================================
+        <!-- ===================================
                 Contact 섹션
     ======================================-->
 
-    <section id="contact-section" class="project-intro-section" data-nav-label="CONTACT" data-nav-color="#FBD914">
-      <div class="contact-container">
-        <div class="section-header">
-          <span class="section-number">CONTACT</span>
-          <h2 class="section-title">함께 만들어갈 <span>프로젝트가 있다면</span></h2>
-          <p class="section-desc">기획, 협업, 채용 문의 모두 환영합니다. 아래 채널로 편하게 연락 주세요.</p>
-        </div>
+        <section
+            id="contact-section"
+            class="project-intro-section"
+            data-nav-label="CONTACT"
+            data-nav-color="#FBD914"
+        >
+            <div class="contact-container">
+                <div class="section-header">
+                    <span class="section-number">CONTACT</span>
+                    <h2 class="section-title">
+                        함께 만들어갈 <span>프로젝트가 있다면</span>
+                    </h2>
+                    <p class="section-desc">
+                        기획, 협업, 채용 문의 모두 환영합니다. 아래 채널로
+                        편하게 연락 주세요.
+                    </p>
+                </div>
 
-        <div class="contact-grid">
+                <div class="contact-grid">
+                    <a href="mailto:eotjd0095@naver.com" class="contact-card">
+                        <div class="contact-icon">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <rect
+                                    x="3"
+                                    y="5"
+                                    width="18"
+                                    height="14"
+                                    rx="2"
+                                />
+                                <path d="M3 7l9 6 9-6" />
+                            </svg>
+                        </div>
 
-          <a href="mailto:eotjd0095@naver.com" class="contact-card">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="5" width="18" height="14" rx="2"/>
-                <path d="M3 7l9 6 9-6"/>
-              </svg>
+                        <div class="contact-info">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value"
+                                >eotjd0095@naver.com</span
+                            >
+                        </div>
+
+                        <div class="contact-arrow">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="M7 17L17 7M9 7h8v8" />
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://github.com/JooD-E"
+                        class="contact-card"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                                />
+                            </svg>
+                        </div>
+
+                        <div class="contact-info">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">@JooD-E</span>
+                        </div>
+
+                        <div class="contact-arrow">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="M7 17L17 7M9 7h8v8" />
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="#" class="contact-card" download>
+                        <div class="contact-icon">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"
+                                />
+                                <path d="M14 3v5h5M9 13h6M9 17h6" />
+                            </svg>
+                        </div>
+
+                        <div class="contact-info">
+                            <span class="contact-label">Resume</span>
+                            <span class="contact-value">이력서 다운로드</span>
+                        </div>
+
+                        <div class="contact-arrow">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="M12 5v14M5 12l7 7 7-7" />
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://jood95.dothome.co.kr/jds_profile/profile.html"
+                        class="contact-card"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.3 6.5a1.78 1.78 0 0 1-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19a.66.66 0 0 0 0 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z"
+                                />
+                            </svg>
+                        </div>
+
+                        <div class="contact-info">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">프로필 보기</span>
+                        </div>
+
+                        <div class="contact-arrow">
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="M7 17L17 7M9 7h8v8" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
             </div>
+        </section>
 
-            <div class="contact-info">
-              <span class="contact-label">Email</span>
-              <span class="contact-value">eotjd0095@naver.com</span>
-            </div>
+        <aside class="side-nav" aria-label="프로젝트 섹션 네비게이션"></aside>
 
-            <div class="contact-arrow">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M7 17L17 7M9 7h8v8"/>
-              </svg>
-            </div>
-          </a>
-
-          <a href="https://github.com/JooD-E" class="contact-card" target="_blank" rel="noopener">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-            </div>
-
-            <div class="contact-info">
-              <span class="contact-label">GitHub</span>
-              <span class="contact-value">@JooD-E</span>
-            </div>
-
-            <div class="contact-arrow">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M7 17L17 7M9 7h8v8"/>
-              </svg>
-            </div>
-          </a>
-
-          <a href="#" class="contact-card" download>
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/>
-                <path d="M14 3v5h5M9 13h6M9 17h6"/>
-              </svg>
-            </div>
-
-            <div class="contact-info">
-              <span class="contact-label">Resume</span>
-              <span class="contact-value">이력서 다운로드</span>
-            </div>
-
-            <div class="contact-arrow">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 5v14M5 12l7 7 7-7"/>
-              </svg>
-            </div>
-          </a>
-
-          <a href="https://jood95.dothome.co.kr/jds_profile/profile.html" class="contact-card" target="_blank" rel="noopener">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.3 6.5a1.78 1.78 0 0 1-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19a.66.66 0 0 0 0 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
-              </svg>
-            </div>
-
-            <div class="contact-info">
-              <span class="contact-label">LinkedIn</span>
-              <span class="contact-value">프로필 보기</span>
-            </div>
-
-            <div class="contact-arrow">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M7 17L17 7M9 7h8v8"/>
-              </svg>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <aside class="side-nav" aria-label="프로젝트 섹션 네비게이션"></aside>
-
-    <script>
-      let win;
-      function winOpen4(){	
-          win = window.open('https://movieapp-qlzy.vercel.app/','pf','toolbar=no,location=no,status=no,menubar=no,resizable=no,scrollbars=yes, width=402, height=854,left=800,top=150');
-          }
-    </script>
-</body>
+        <script>
+            let win;
+            function winOpen4() {
+                win = window.open(
+                    "https://movieapp-qlzy.vercel.app/",
+                    "pf",
+                    "toolbar=no,location=no,status=no,menubar=no,resizable=no,scrollbars=yes, width=402, height=854,left=800,top=150",
+                );
+            }
+        </script>
+    </body>
 </html>

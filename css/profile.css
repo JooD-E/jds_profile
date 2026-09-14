@@ -193,6 +193,77 @@
           jestina section
   =============================*/
 
+.jestina-tabs {
+    display:flex;
+    gap:12px;
+    margin-bottom:16px;
+    justify-content: flex-end;
+}
+.j-tab-btn{
+    background:transparent;
+    border:1px solid #555;
+    color: #888;
+    padding:6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight:600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.j-tab-btn:hover {
+    border-color: #c5a880;
+    color: #c5a880;
+}
+
+.j-tab-btn.is-active {
+    background: rgba(197,168,128,0.1);
+    border-color: #c5a880;
+    color: #c5a880;
+}
+
+.mockup-body .mockup-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.mockup-body iframe.mockup-img{
+    width: 150%;
+    height:150%;
+
+    transform:scale(0.666);
+    transform-origin: top left;
+    border:none;
+    background:#fff;
+}
+
+
+.mockup-body .mockup-img.is-active {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 10;
+}
+
+.mockup-window:hover .mockup-body img.mockup-img{
+    transform: translateY(-45%);
+    transition:transform 4s ease-in-out;
+}
+
+.btn-view {
+    background:rgba(197,168,128,0.1);
+    color: #c5a880;
+    border: 1px solid #c5a880;
+}
+.btn-view:hover{
+    background: rgba(197,168,128,0.2);
+    transform: translateY(-2px);
+}
+
 
 .project-intro-section {
   width: 100%;
