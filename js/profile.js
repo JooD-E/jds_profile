@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
   //   data-nav-label="라벨명" data-nav-color="#컬러"
   // ==========================================================
   const nav = document.querySelector('.side-nav');
-  const sections = document.querySelectorAll('.project-intro-section');
+  const sections = document.querySelectorAll('.project-intro-section, .skill-section');
 
   if (nav && sections.length) {
     sections.forEach((section) => {
